@@ -9,7 +9,7 @@ using namespace std;
 int runExperiments(int x) {
 	int success = 0;
 	for(int i = 0; i < x; i++) {
-		int val = Random::get(0, 1); // Integer
+		int val = Random::get(0, 1);
 		if(val == 1) {
 			success++;
 		}
@@ -19,7 +19,6 @@ int runExperiments(int x) {
 
 int main() {
 	cout << "Budeme pocitat pravdepodobnost rastu semena na rastlinu.\n";
-	//cout << runExperiments(10);
 	int output [10] = {0};
 	for(int i = 0; i < 400; i++) {
 		int result = runExperiments(10);
