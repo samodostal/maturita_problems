@@ -1,0 +1,39 @@
+-- MySQL dump 10.9
+--
+-- Host: localhost    Database: pok
+-- ------------------------------------------------------
+-- Server version	4.1.11
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `merania`
+--
+
+DROP TABLE IF EXISTS `merania`;
+CREATE TABLE `merania` (
+  `id_merania` int(10) unsigned NOT NULL auto_increment,
+  `cas` datetime NOT NULL default '0000-00-00 00:00:00',
+  `stanica` char(5) NOT NULL default '',
+  `teplota` float NOT NULL default '0',
+  PRIMARY KEY  (`id_merania`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `merania`
+--
+
+
+/*!40000 ALTER TABLE `merania` DISABLE KEYS */;
+LOCK TABLES `merania` WRITE;
+INSERT INTO `merania` VALUES (1,'2006-05-01 06:00:00','MT001',27.5),(2,'2006-05-01 06:00:00','MT003',-12.4),(3,'2006-05-01 06:00:00','MT002',26.2),(4,'2006-05-08 06:00:00','MT001',29.1),(5,'2006-05-08 06:00:00','MT003',-11.8),(6,'2006-05-08 06:00:00','MT002',21),(7,'2006-05-15 18:00:00','MT001',24.1),(8,'2006-05-15 18:00:00','MT002',-0.8),(9,'2006-05-15 18:00:00','MT003',31),(10,'2006-05-22 12:00:00','MT001',14.1),(11,'2006-05-22 12:00:00','MT003',1.8),(12,'2006-05-22 12:00:00','MT002',21.9),(13,'2006-05-29 06:00:00','MT003',33.1),(14,'2006-05-29 06:00:00','MT002',-11.8),(15,'2006-05-29 06:00:00','MT001',21);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `merania` ENABLE KEYS */;
+

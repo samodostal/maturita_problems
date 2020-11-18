@@ -1,0 +1,18 @@
+#include "17.h"
+
+main()
+{
+	inicializuj_vsetko();
+	
+	Kruh k;
+	
+	while(!k.SmeDoma())
+	{
+		if (key[KEY_LEFT])  k.Vlavo();
+		if (key[KEY_RIGHT]) k.Vpravo();
+		if (key[KEY_UP])    k.Hore();
+		if (key[KEY_LEFT])  k.Dolu();
+		rest(500);
+	}
+}
+END_OF_MAIN();
